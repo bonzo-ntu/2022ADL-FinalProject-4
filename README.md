@@ -3,7 +3,7 @@
 # Members
 
 # Environment
-* python==3.9.14
+* python==3.9.15
 * transformers==4.25.1
 * torch==1.13.0
 * torchvision==0.14.0

@@ -2,6 +2,9 @@
 
 # Members
 
+# Data
+should make a folder `data` to keep all `.csv` files
+
 # Environment
 * python==3.9.15
 * transformers==4.25.1

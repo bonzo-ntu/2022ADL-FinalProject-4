@@ -29,8 +29,8 @@ def tokenized_colum_mt5(df, name, columns, tokenizer, path='./'):
 
         # write files
         path.mkdir(parents=True, exist_ok=True)
-        i = "end" if i == len(columns) else i
-        pkl.dump(df, open(path/f'{name}_tokenized_{i}_mt5.pkl', 'wb'))
+        i = "end" if i == len(columns)-1 else i
+        pkl.dump(df, open(path/f'{name}_tokenized_{i}.pkl', 'wb'))
         df.to_csv(path/f'{name}_tokenized_{i}_mt5.csv')
         print(f'end tokenize {column}')
 
